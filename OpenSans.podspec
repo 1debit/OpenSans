@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.source = { :git => 'https://github.com/CocoaPods-Fonts/OpenSans.git', :tag => spec.version.to_s }
   spec.source_files = 'UIFont+OpenSans.{h,m}'
-  spec.resource_bundle = { 'OpenSans' => 'Fonts/*.ttf' }
+  spec.resource = 'Fonts/*.ttf'
   spec.frameworks = 'UIKit', 'CoreText'
   spec.requires_arc = true
 end
